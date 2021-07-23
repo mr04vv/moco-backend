@@ -1,0 +1,10 @@
+development:
+  dialect: mysql
+  dir: db/migration
+  datasource: root:root@tcp(db:3306)/moco?charset=utf8mb4&collation=utf8mb4_general_ci&parseTime=true
+
+production:
+  dialect: mysql
+  dir: db/migrations
+  datasource: dbname=myapp sslmode=disable
+  table: migrations
